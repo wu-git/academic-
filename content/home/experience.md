@@ -41,6 +41,7 @@ date_format = "January 2006"
   date_start = "2014-01-01"
   date_end = "2015-07-01"
   description = """
+  
   * Perform data cleaning and statistical analysis on Medicare and Medicaid claims data using SAS program; assist with data reports preparation 
   * Perform survival analysis on time to events in MI Choice program enrollees
   """
