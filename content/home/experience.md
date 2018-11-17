@@ -19,27 +19,30 @@ date_format = "January 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
+  title = "Statistician Staff Specialist"
+  company = "University of Michigan"
   company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  location = "Ann Arbor"
+  date_start = "2015-07-01"
   date_end = ""
   description = """
-  Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Provide data evidence to support biomedical research, improve patient outcomes and promote health service quality. 
+  * Prepare and refine analytic approaches developed in conjunction with investigative teams. Develop and refine statistical analyses, evaluate quality of data, interpret findings, and prepare materials suitable for publication in a peer-reviewed journal. 
+  * Assist in the development of scholarly publications and grant proposals.
+  
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
+  title = "Data Analyst"
+  company = "Michigan State University"
   company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  location = "East Lansing"
+  date_start = "2014-01-01"
+  date_end = "2015-07-01"
+  description = """
+  * Perform data cleaning and statistical analysis on Medicare and Medicaid claims data using SAS program; assist with data reports preparation 
+  * Perform survival analysis on time to events in MI Choice program enrollees
+  """
 
 +++

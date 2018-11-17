@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic on Academic</title>
+    <title>Ting Wu on Ting Wu</title>
     <link>/</link>
-    <description>Recent content in Academic on Academic</description>
+    <description>Recent content in Ting Wu on Ting Wu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; 2018 Xiaoting Wu</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
@@ -62,6 +62,33 @@
 
 &lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>A preoperative risk model for postoperative pneumonia after coronary artery bypass grafting</title>
+      <link>/publication/pneumonia-risk-model/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/pneumonia-risk-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of concomitant pulmonary hypertension on early and late outcomes following surgery for mitral stenosis</title>
+      <link>/publication/ph-mitral-stenosis-yang/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/ph-mitral-stenosis-yang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predicting Long-Term Nursing Home Transfer from MI CHOICE Waiver Program</title>
+      <link>/publication/nursing-home/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/nursing-home/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -464,16 +491,6 @@ git submodule update --init --recursive
     </item>
     
     <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>/publication/person-re-id/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 -0400</pubDate>
-      
-      <guid>/publication/person-re-id/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Hello R Markdown</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
@@ -525,13 +542,12 @@ Figure 1: A fancy pie chart.
     </item>
     
     <item>
-      <title>Mobile visual clothing search</title>
-      <link>/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
+      <title>The 18-kDa translocator protein (TSPO) disrupts mammary epithelial morphogenesis and promotes breast cancer cell migration</title>
+      <link>/publication/tspo/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 -0400</pubDate>
       
-      <guid>/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
+      <guid>/publication/tspo/</guid>
+      <description></description>
     </item>
     
     <item>
