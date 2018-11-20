@@ -179,6 +179,12 @@ enableGitInfo = false
   custom_css = []
   custom_js  = []
 
+ # Post list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = Stream
+    post_format = 2
+    
   # Publication types.
   #   Used to categorize publications.
   #   The index of the publication type in the list is used as its unique numerical identifier.
@@ -212,11 +218,7 @@ enableGitInfo = false
     # List publications and talks related to the project?
     list_children = true
 
-    # Post list format.
-    #   0 = Simple
-    #   1 = Detailed
-    #   2 = Stream
-    post_format = 2
+   
 
     # Publication list format.
     #   0 = Simple
@@ -253,7 +255,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "#contact"  # For a direct email link, use "mailto:test@example.org".
+    link = "#contact"  # For a direct email link, use "mailto:xiaotinw@med.umich.edu".
 
   [[params.social]]
     icon = "twitter"
