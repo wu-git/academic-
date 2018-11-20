@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.51" />
+  <meta name="author" content="Ting Wu">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Xiaoting Wu, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; Chang He, The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative; Donald S. Likosky, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative for the PERForm Registry and the Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative&quot;
+Conference: MWSUG 2018, Indianapolis, US (“https://www.mwsug.org”)
+ABSTRACT Model validation is an important step in establishing a clinical prediction model.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/talk/sas-prediction/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Ting Wu">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Ting Wu">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/talk/sas-prediction/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Ting Wu">
+  <meta property="og:url" content="/talk/sas-prediction/">
+  <meta property="og:title" content="Using SAS to Validate Clinical Prediction Models (MWSUG 2018 - Paper HS-39) | Ting Wu">
+  <meta property="og:description" content="Xiaoting Wu, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; Chang He, The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative; Donald S. Likosky, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative for the PERForm Registry and the Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative&quot;
+Conference: MWSUG 2018, Indianapolis, US (“https://www.mwsug.org”)
+ABSTRACT Model validation is an important step in establishing a clinical prediction model.">
+  
+  
+    
+  <meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-10-01T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-10-01T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Using SAS to Validate Clinical Prediction Models (MWSUG 2018 - Paper HS-39) | Ting Wu</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Ting Wu</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="pub" itemscope itemtype="http://schema.org/Event">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Using SAS to Validate Clinical Prediction Models (MWSUG 2018 - Paper HS-39)</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Ting Wu">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-10-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2018-10-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Oct 1, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Ting Wu">
+  </span>
+
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/r/">R</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Using%20SAS%20to%20Validate%20Clinical%20Prediction%20Models%20%28MWSUG%202018%20-%20Paper%20HS-39%29&amp;url=%2ftalk%2fsas-prediction%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2ftalk%2fsas-prediction%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2ftalk%2fsas-prediction%2f&amp;title=Using%20SAS%20to%20Validate%20Clinical%20Prediction%20Models%20%28MWSUG%202018%20-%20Paper%20HS-39%29"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2ftalk%2fsas-prediction%2f&amp;title=Using%20SAS%20to%20Validate%20Clinical%20Prediction%20Models%20%28MWSUG%202018%20-%20Paper%20HS-39%29"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Using%20SAS%20to%20Validate%20Clinical%20Prediction%20Models%20%28MWSUG%202018%20-%20Paper%20HS-39%29&amp;body=%2ftalk%2fsas-prediction%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+      <br>
+    
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9" itemprop="datePublished">
+            
+            Oct 1, 2018
+            <div class="talk-time">
+              
+                12:00 AM
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-9">
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      
+
+
+<p>Xiaoting Wu, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; Chang He, The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative; Donald S. Likosky, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative for the PERForm Registry and the Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative&quot;</p>
+<p>Conference: MWSUG 2018, Indianapolis, US (“<a href="https://www.mwsug.org" class="uri">https://www.mwsug.org</a>”)</p>
+<div id="abstract" class="section level3">
+<h3>ABSTRACT</h3>
+<p>Model validation is an important step in establishing a clinical prediction model. Model validation process quantifies how well the model predicts outcomes for future patients. However, there were very few SAS programming examples showing the validation process. We previously developed a generalized mixed effect model that predicts peri-operative blood transfusion from patient characteristics. In this paper, we demonstrate the SAS? techniques that we used to validate such a model. These validation methods include calibration, discrimination and sensitivity analysis using bootstrapping method.</p>
+</div>
+<div id="introduction" class="section level3">
+<h3>INTRODUCTION</h3>
+<p>Information of patients’ blood transfusion risk prior to cardiac surgery may help clinicians assess a patient’s condition and facilitate informed decision making [1] . For example, given the prediction of transfusion risk, blood conservation modalities may be undertaken prior to surgery to reduce a patient’s risk of receiving potentially unnecessary blood transfusions [2], which are independently associated with adverse outcomes [3, 4]. To provide a risk assessment tool for blood transfusions, we developed a prediction model based on a patient’s preoperative risk factors from a multi-hospital dataset of more than 20,000 coronary artery bypass grafts procedures. The transfusion rate was 36.8% in our data. This model identified 16 preoperative predictors, and accounted for hospitals as random effects [5]. After model development, model validation is a critical step to assess the model performance [6]. The model performance in aspects of model calibration, discrimination and sensitivity analysis were assessed using SAS?. Previously the data was randomly split into model development dataset and model validate dataset. We used a development dataset for variable selection and functional form assessment. We used a validation dataset to assess the model performance. We finally used the large dataset (i.e., development combined with validation datasets) to obtain more stable parameter estimates. The following procedures can be applied to the internal or external validation dataset to validate the model performance.</p>
+</div>
+<div id="calibration" class="section level3">
+<h3>CALIBRATION</h3>
+<p>Calibration demonstrates the agreement between observed outcomes and predictions. Here, the calibration plot has the predicted probability by deciles on the x-axis, and the observed rates by deciles on the y-axis. A good calibration should lie close to a 45-degree line.</p>
+<p>First, we used OUTPUT statement to obtain the prediction from our mixed effect model. Option (NOBLUP) is used to exclude the predictors of the random effects when calculating the predicted probability for each patient. In this model, we have 16 predictors. These predictors were chosen by model selection as well as their clinical relationship with blood transfusion. In this model, subject=STS_hospnpi fits the random hospital effect. We also used STORE statement to obtain the model estimate to “parameter_dat” dataset.</p>
+<pre class="r"><code>/*******output prediction from the mixed effect model ****/
+proc glimmix data=mix_model;
+  class  bsa4c  (ref=&quot;LT1.6&quot;) albumin_3c (ref=&quot;&gt;3.5&quot;) female (ref=&quot;0&quot;) ef4cat (ref=&quot;60%+&quot;) crealst4c (ref=&quot;LT0.8&quot;) race3c (ref=&quot;White&quot;) status3c (ref=&quot;Elective&quot;) vd3 (ref=&quot;No&quot;) chf_ (ref=&quot;No&quot;) pvd_ (ref=&quot;No&quot;)  cvd_ (ref=&quot;No&quot;) dialysis_ (ref=&quot;No&quot;) prior_cv(ref=&quot;No&quot;) STS_hospnpi;
+  model rbc = year age bsa4c albumin_3c  hct_ hct_gt36_ hct_gt39_ hct_gt43_ female ef4cat  crealst4c race3c   status3c vd3      chf_ pvd_   cvd_ dialysis_ prior_cv  /link=logit dist=bin  solution ;
+  random int/ subject=STS_hospnpi;
+  store parameter_dat;
+  output out=pre pred(noblup ilink)=p; 
+  run;</code></pre>
+<p>We then rank the predicted probability into deciles using PROC RANK. Variable “p” is the individual transfusion probability calculated by the fixed effect from the model.</p>
+<pre class="r"><code>* create probability deciles, and the ranks of probability &lt;rank_p&gt;;
+proc rank data=pre out=ranky descending groups=10; var p; ranks rank_p; run;
+
+*output the median probability by deciles (&#39;rank_p&#39;); 
+proc means data=ranky median mean; 
+   var p ;
+   by rank_p;
+   output out=median_pr median=median_predict_p mean=mean_predict; run;
+
+*output the observed transfusion rates by deciles, which is the number of rbc events divided by the total number of observations in each decile;
+proc sql;
+   create table observe_pr as
+   select sum(rbc) as no_events,  count (*) as no_obs, calculated no_events/ calculated no_obs as observe_pr, rank_p
+   from ranky
+   group by rank_p;quit;
+
+* create the merge dataset that include the median probability and observed transfusion rate in each decile; 
+
+data merge1;
+   merge observe_pr median_pr;by rank_p;run;</code></pre>
+<p>In each decile, we calculated the observed rate and the median prediction probability. We then plot the calibration plot with the observed transfusion rate in each decile on x axis, and the median prediction probability on y axis. The 45-degree line was added as a reference line. The data points which are represented by circles fall close to the reference line (figure 1). This indicates that the model fits the data well.</p>
+<pre class="r"><code>*Plot the calibration Graph; 
+proc sgplot data=merge1;
+   scatter  x=observe_p y=median_predict_p;
+   lineparm x=0 y=0 slope=1; /** plot the reference line **/
+   xaxis grid; yaxis grid;
+run;</code></pre>
+</div>
+<div id="discrimination" class="section level3">
+<h3>DISCRIMINATION</h3>
+<p>The common measure for model discrimination is the area under the receiver operating characteristic (ROC) curve [7]. This is often called a c-statistic, which can be interpreted as the probability that a subject with an observed outcome would have higher probability of predicted outcome than a subject without the observed outcome.</p>
+<p>We first used the STORE Statement in GLIMMIX to store the parameters from the model development. ILINK was used so that the prediction is at the scale of probability. While GLIMMIX does not have ROC function, we used the predicted probability (variable “Predicted”) and the ROC options in PROC LOGISTIC to generate the ROC curves.</p>
+<pre class="r"><code>proc plm restore= parameter_dat; 
+  score data=mix_model out=out/ilink;run;
+proc logistic data=out descending ; 
+       model rbc = Predicted; 
+     roc;
+       ods output ROCassociation=roc; 
+    run;</code></pre>
+</div>
+<div id="bootstrap-sampling" class="section level3">
+<h3>BOOTSTRAP SAMPLING</h3>
+<p>To assess model performance in different clinical subgroups, bootstrapping sampling can be used [8, 9]. In this example, we generated bootstrap samples by sampling patients with replacement from a defined clinical subgroup. There’re many ways to create bootstrap samples in SAS, including PROC SURVEYSELECT, do loops. After generation of bootstrap samples, we calculated the C-Statistics in each bootstrapping sample, and estimate the bootstrapping mean and variance.</p>
+<p>For example, one of the important clinical subgroups for blood transfusion is defined by a patient’s admission status (i.e., elective, urgent or emergent). For each admission status, we created 100 bootstrapping samples from the original data. We applied the model estimates to these bootstrapping samples using PROC PLM RESTORE. We then calculated the C-Statistics within each sample. From the bootstrapping samples, we could assess the standard deviation of the C-Statistics. From this sensitivity analysis, we were able to validate how robust our model performance is among different clinical groups.</p>
+<pre class="r"><code>/*******create boot samples***/
+%macro bootsample(b);
+data sub1 (where=(status3c=&quot;Elective&quot;))
+     sub2 (where=(status3c=&quot;Urgent&quot;))
+     sub3 (where=(status3c=&quot;Emergent&quot;); /* Create one data set for each subgroup */
+   set mix_model;
+run;
+
+data boot_subgroup;  
+%do t=1 %to 3; 
+ do sample=1 to &amp;b;
+ do i = 1 to nobs;
+ pt = round(ranuni(&amp;t)*nobs) ;  /* ranuni returns a random number from the uniform distribution on (0,1) interval */
+ set sub&amp;t nobs = nobs point=pt;
+ output;
+ end;
+ end;
+ %end;
+stop;
+run;
+
+%mend;
+
+%bootsample(100);</code></pre>
+<pre class="r"><code>/********example: model application to the bootstrapping samples of emergent status *****/
+
+%macro combine;
+%do i=1 %to 100;
+  proc plm restore=parameter_dat; 
+       score data=boot_subgroup(where=(sample=&amp;i and status3c=&quot;Emergent&quot;))     out=out&amp;i/ilink;run;
+
+  proc logistic data=out&amp;i  descending ; 
+        model rbc = Predicted; 
+      roc;
+        ods output ROCassociation=roc&amp;i;  
+%end;
+    run; 
+
+ data roc_test;
+      set  %do i=1 %to 100;roc&amp;i  %end;
+      where ROCModel=&#39;Model&#39;;
+ run;
+ %mend;
+
+%combine;
+
+/*** obtain mean and variance for c-statistics of modeling for emergent status*****/
+proc means data=roc_test mean std;
+    var area;
+run;</code></pre>
+<p>The model c-statistics was then calculated in different clinical subgroup. For example, here is the result of AUC in emergent admission patients from the bootstrap samples.</p>
+</div>
+<div id="conclusion" class="section level3">
+<h3>CONCLUSION</h3>
+<p>This paper covers some common techniques for validating the performance of a generalized mixed effect model. We demonstrated SAS applications in model calibration, discriminations and sensitivity analysis.</p>
+</div>
+<div id="references" class="section level3">
+<h3>REFERENCES</h3>
+<ol style="list-style-type: decimal">
+<li>Alghamdi, A.A., et al., Development and validation of Transfusion Risk Understanding Scoring Tool (TRUST) to stratify cardiac surgery patients according to their blood transfusion needs. Transfusion, 2006. 46(7): p. 1120-9.</li>
+<li>Ranucci, M., et al., Predicting transfusions in cardiac surgery: the easier, the better: the Transfusion Risk and Clinical Knowledge score. Vox Sang, 2009. 96(4): p. 324-32.</li>
+<li>Speiss, B.D., Transfusion and outcome in heart surgery. Ann Thorac Surg, 2002. 74(4): p. 986-7.</li>
+<li>Paone, G., et al., Transfusion of 1 and 2 units of red blood cells is associated with increased morbidity and mortality. Ann Thorac Surg, 2014. 97(1): p. 87-93; discussion 93-4.</li>
+<li>Likosky, D.S., et al., Prediction of Transfusions After Isolated Coronary Artery Bypass Grafting Surgical Procedures. Ann Thorac Surg, 2017. 103(3): p. 764-772.</li>
+<li>EW, S., Clinical prediction models: a practical approach to development, validation, and updating. New York: Springer, 2009.</li>
+<li>Duchnowski, M., Predictive Models: Storing, Scoring and Evaluating SAS, 2017.</li>
+<li>MR, C., Bootstrap Methods: A Practioner’s Guide. John Wiley &amp; Sons, 1999.</li>
+<li>Nancy Barker, O.P.S., Wallingford, UK, A Practical Introduction to the Bootstrap Using the SAS System. Semantic Scholar, 2005.</li>
+</ol>
+</div>
+<div id="acknowledgments" class="section level3">
+<h3>ACKNOWLEDGMENTS</h3>
+<p>Thanks to the support from The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative.</p>
+</div>
+<div id="contact-information" class="section level3">
+<h3>CONTACT INFORMATION</h3>
+<p>Your comments and questions are valued and encouraged. Contact the author at:</p>
+<p>Xiaoting Wu (Ting), PhD, MS Department of Cardiac Surgery 1500 E Medical Center Drive Ann Arbor, MI 48109 734.936.7731 <a href="mailto:xiaotinw@med.umich.edu">xiaotinw@med.umich.edu</a></p>
+<p>SAS and all other SAS Institute Inc. product or service names are registered trademarks or trademarks of SAS Institute Inc. in the USA and other countries. ? indicates USA registration. Other brand and product names are trademarks of their respective companies.</p>
+</div>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/sas/">SAS</a>
+  
+  <a class="badge badge-light" href="/tags/prediction-model/">Prediction Model</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Ting Wu</a></h5>
+    <h6 class="card-subtitle">Biostatistician</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/" >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=1K6LeAwAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/wu-git" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+  </div>
+</div>
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    &copy; 2018 Xiaoting Wu &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "Search Results",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.2861db6bcf2db4b5eade32c795453e47.js"></script>
+
+    
+
+  </body>
+</html>
+

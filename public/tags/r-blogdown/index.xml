@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R blogdown on Ting Wu</title>
+    <link>/tags/r-blogdown/</link>
+    <description>Recent content in R blogdown on Ting Wu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Xiaoting Wu</copyright>
+    <lastBuildDate>Thu, 08 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r-blogdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using R Blogdown for Site Building</title>
+      <link>/post/blog-down/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog-down/</guid>
+      <description>It’s such a learning experience in setting up a website using github+ terminal + R blogdown + netlify for me. In general, I followed the post from [Alison Hill] (https://alison.rbind.io/post/up-and-running-with-blogdown/).
+A couple of problems have occured and I have searched very hard to resolve them.
+ R crash whenever I tried to open projects in Mac OS system.   Solution: download update R version from (https://www.rstudio.com/products/rstudio/download/). Now I have Rstudio 1.</description>
+    </item>
+    
+  </channel>
+</rss>
