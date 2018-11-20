@@ -255,7 +255,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "#contact"  # For a direct email link, use "mailto:xiaotinw@med.umich.edu".
+    link = "mailto:xiaotinw@med.umich.edu"  # For a direct email link, use "mailto:xiaotinw@med.umich.edu".
 
   [[params.social]]
     icon = "twitter"
