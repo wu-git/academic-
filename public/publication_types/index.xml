@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Xiaoting Wu</copyright>
-    <lastBuildDate>Sat, 01 Oct 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 14 Nov 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,18 @@
     <item>
       <title>2</title>
       <link>/publication_types/2/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>/publication_types/2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4</title>
+      <link>/publication_types/4/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 -0400</pubDate>
+      
+      <guid>/publication_types/4/</guid>
       <description></description>
     </item>
     
