@@ -14,10 +14,10 @@
     
     <item>
       <title>Median Survival Time</title>
-      <link>/post/median-survival-time/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      <link>/post/2019-03-27-median-survival-time/median-survival-time/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/median-survival-time/</guid>
+      <guid>/post/2019-03-27-median-survival-time/median-survival-time/</guid>
       <description>One parameter of interest in survival analysis is the median residual at time x.
 Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &amp;gt;x) $, X is a continuous random variable.
 The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lifetime is the 50th percentile \(x_{0.5}\), the 75 percentile lifetime is the 70th percentile \(x_{0.</description>
@@ -25,10 +25,10 @@ The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lif
     
     <item>
       <title>Using R Blogdown for Site Building</title>
-      <link>/post/blog-down/</link>
+      <link>/post/blogdown/blog-down/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/blog-down/</guid>
+      <guid>/post/blogdown/blog-down/</guid>
       <description>It’s such a learning experience in setting up a website using github+ terminal + R blogdown + netlify for me. In general, I followed the post from [Alison Hill] (https://alison.rbind.io/post/up-and-running-with-blogdown/).
 A couple of problems have occured and I have searched very hard to resolve them.
  R crash whenever I tried to open projects in Mac OS system.   Solution: download update R version from (https://www.rstudio.com/products/rstudio/download/). Now I have Rstudio 1.</description>

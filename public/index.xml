@@ -12,10 +12,10 @@
     
     <item>
       <title>Median Survival Time</title>
-      <link>/post/median-survival-time/</link>
-      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      <link>/post/2019-03-27-median-survival-time/median-survival-time/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/median-survival-time/</guid>
+      <guid>/post/2019-03-27-median-survival-time/median-survival-time/</guid>
       <description>
 
 
@@ -29,9 +29,13 @@ plots=survival( cl test atrisk (maxlen=13) nocensor) maxtime=4000 notable ;
 time futime*status(0,1);
 strata drug; 
 run;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost2.png&#34; width=&#34;400px&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-03-27-median-survival-time_files/survivalpost2.png&#34; width=&#34;400px&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The missing 75th percentile survival time is because the maximum survival probability that could be determined is 0.34 in this study data (see the below figure).&lt;/p&gt;
-&lt;p&gt;In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times. If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of &lt;span class=&#34;math inline&#34;&gt;\(S(t)\)&lt;/span&gt; beyond this point, the Kaplan Meier survival estimate is undetermined. These are the reasons that you may see the survival output data had missing estimators in those non-event times. &lt;img src=&#34;/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost1.png&#34; alt=&#34;test image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times. If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of &lt;span class=&#34;math inline&#34;&gt;\(S(t)\)&lt;/span&gt; beyond this point, the Kaplan Meier survival estimate is undetermined. These are the reasons that you may see the survival output data had missing estimators in those non-event times. &lt;img src=&#34;/post/2019-03-27-median-survival-time_files/survivalpost1.png&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/Users/Wuxiaoting/Desktop/academic/academic-/static/img/survivalpost1.png&#34; alt=&#34;test image&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;test image&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -46,10 +50,10 @@ run;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Using R Blogdown for Site Building</title>
-      <link>/post/blog-down/</link>
+      <link>/post/blogdown/blog-down/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/blog-down/</guid>
+      <guid>/post/blogdown/blog-down/</guid>
       <description>
 
 
@@ -75,6 +79,13 @@ run;&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;p&gt;After uploading all neccessary needed files into github, especially the ‘public’ folder, I followed the deploy setting but failed. The key step here turn out to be that you need to make sure that the hugo versions are consistent in your machine and netlify.&lt;/p&gt;
 &lt;p&gt;In terminal, I typed in `&lt;code&gt;Hugo versoins&lt;/code&gt; to obtain the hugo versions 0.51 in my machine. In netlify, I added the variables in the deploy setting, Hugo_version, and set the value of 0.51.&lt;/p&gt;
+&lt;p&gt;*4. Create a new post option 1: use addins &amp;lt; NewPost&amp;gt; which will create a newpost under the folder Content/Post option 2: create a Post folder under Content/Post&lt;/p&gt;
+&lt;p&gt;*5. Insert an image in RMD file and show it in blogdown&lt;/p&gt;
+&lt;p&gt;option 1: use addins &lt;Insert image&gt; during the edits of .md file This will generate a code in the file for example&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;![](/post/2019-03-27-median-survival-time_files/survivalpost1.png)  &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The file directory is under static/ with the relative directory path&lt;/p&gt;
+&lt;p&gt;option 2: put the file in the corresponding post file under static/ , and enter the file relative file path. For example, here is another code to add in a image which will allow image size adjustment&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;/post/2019-03-27-median-survival-time_files/survivalpost2.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

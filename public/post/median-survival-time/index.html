@@ -104,9 +104,9 @@ The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lif
   <meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-03-26T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-03-27T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-03-26T00:00:00&#43;00:00">
+  <meta property="article:modified_time" content="2019-03-27T00:00:00&#43;00:00">
   
 
   
@@ -265,9 +265,9 @@ The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lif
 
   <span class="article-date">
     
-    <meta content="2019-03-26 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-03-26 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Mar 26, 2019
+    <meta content="2019-03-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-03-27 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Mar 27, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -380,9 +380,13 @@ plots=survival( cl test atrisk (maxlen=13) nocensor) maxtime=4000 notable ;
 time futime*status(0,1);
 strata drug; 
 run;</code></pre>
-<p><img src="/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost2.png" width="400px" /></p>
+<p><img src="/post/2019-03-27-median-survival-time_files/survivalpost2.png" width="400px" /></p>
 <p>The missing 75th percentile survival time is because the maximum survival probability that could be determined is 0.34 in this study data (see the below figure).</p>
-<p>In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times. If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of <span class="math inline">\(S(t)\)</span> beyond this point, the Kaplan Meier survival estimate is undetermined. These are the reasons that you may see the survival output data had missing estimators in those non-event times. <img src="/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost1.png" alt="test image" /></p>
+<p>In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times. If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of <span class="math inline">\(S(t)\)</span> beyond this point, the Kaplan Meier survival estimate is undetermined. These are the reasons that you may see the survival output data had missing estimators in those non-event times. <img src="/post/2019-03-27-median-survival-time_files/survivalpost1.png" /></p>
+<div class="figure">
+<img src="/Users/Wuxiaoting/Desktop/academic/academic-/static/img/survivalpost1.png" alt="test image" />
+<p class="caption">test image</p>
+</div>
 
     </div>
 
@@ -392,8 +396,6 @@ run;</code></pre>
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tags/survival/">Survival</a>
-  
-  <a class="badge badge-light" href="/tags/sas/">SAS</a>
   
 </div>
 
@@ -489,16 +491,6 @@ run;</code></pre>
 
     
     
-    <div class="article-widget">
-      <div class="hr-light"></div>
-      <h3>Related</h3>
-      <ul>
-        
-        <li><a href="/talk/sas-prediction/">Using SAS to Validate Clinical Prediction Models (MWSUG 2018 - Paper HS-39)</a></li>
-        
-      </ul>
-    </div>
-    
 
     
 
@@ -567,6 +559,9 @@ run;</code></pre>
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -584,6 +579,8 @@ run;</code></pre>
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 

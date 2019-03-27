@@ -1,0 +1,30 @@
+---
+title: "Median Survival Time"
+author: "Ting Wu"
+date: '2019-03-26'
+output: pdf_document
+image:
+  caption: ''
+  focal_point: ''
+slug: median-survival-time
+tags:
+- Survival
+- SAS
+categories: SAS
+---
+
+
+
+<p>One parameter of interest in survival analysis is the median residual at time x.</p>
+<p>Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &gt;x) $, X is a continuous random variable.</p>
+<p>The pth quantile is found by solving <span class="math inline">\(S(x_p)=1-p\)</span>. For example, the median lifetime is the 50th percentile <span class="math inline">\(x_{0.5}\)</span>, the 75 percentile lifetime is the 70th percentile <span class="math inline">\(x_{0.75}\)</span>. These are obtained by solving the following: <span class="math inline">\(S(x_{0.5})=1-0.5=0.5\)</span>, <span class="math inline">\(S(x_{0.75})=1-0.75=0.25\)</span>.</p>
+<p>In Kaplan Meier estimate, we find the smallest time <span class="math inline">\(x_p\)</span> for which the product limit estimator is less than or equal to 1-p. That is <span class="math display">\[ \hat{X_p}= inf [ t: \hat{S} (t) \le 1-p ] \]</span></p>
+<p>The LIFETEST procedure in SAS provides the survival time estimate in the table below:</p>
+<pre class="r"><code>proc lifetest data=pbc outsurv=km_sur2 
+plots=survival( cl test atrisk (maxlen=13) nocensor) maxtime=4000 notable ;
+time futime*status(0,1);
+strata drug; 
+run;</code></pre>
+<p><img src="/Users/Wuxiaoting/Desktop/academic/academic-/static/img/imagepost/survivalpost2.png" width="400px" /></p>
+<p>The missing 75th percentile survival time is because the maximum survival probability that could be determined is 0.34 in this study data (see the below figure).</p>
+<p>In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times. If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of <span class="math inline">\(S(t)\)</span> beyond this point, the Kaplan Meier survival estimate is undetermined. These are the reasons that you may see the survival output data had missing estimators in those non-event times. <img src="/Users/Wuxiaoting/Desktop/academic/academic-/static/img/survivalpost1.png" alt="test image" /></p>

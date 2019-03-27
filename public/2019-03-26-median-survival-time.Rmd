@@ -1,16 +1,16 @@
 ---
-title: Median Survival Time
-author: Ting Wu
+title: "Median Survival Time"
+author: "Ting Wu"
 date: '2019-03-26'
-slug: median-survival-time
-categories:
-  - SAS
-tags:
-  - Survival
-  - SAS
+output: pdf_document
 image:
   caption: ''
   focal_point: ''
+slug: median-survival-time
+tags:
+- Survival
+- SAS
+categories: SAS
 ---
 
 
@@ -34,7 +34,7 @@ run;
 ```
 
 ```{r, out.width = "400px", echo=FALSE}
-knitr::include_graphics("/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost2.png")
+knitr::include_graphics("/Users/Wuxiaoting/Desktop/academic/academic-/static/img/imagepost/survivalpost2.png")
 ```
 
 
@@ -42,4 +42,4 @@ knitr::include_graphics("/Users/Wuxiaoting/Desktop/academic/academic-/content/im
 The missing 75th percentile survival time is because the maximum survival probability that could be determined is 0.34 in this study data (see the below figure). 
 
 In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times.  If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of $S(t)$ beyond this point, the Kaplan Meier survival estimate is undetermined.  These are the reasons that you may see the survival output data had missing estimators in those non-event times. 
-![test image](/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost1.png) 
+![test image](/Users/Wuxiaoting/Desktop/academic/academic-/static/img/survivalpost1.png) 
