@@ -45,31 +45,6 @@ run;&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
-      <title>Median survival time</title>
-      <link>/post/survival.median.time/</link>
-      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/survival.median.time/</guid>
-      <description>
-
-
-&lt;p&gt;One parameter of interest in survival analysis is the median residual at time x.&lt;/p&gt;
-&lt;p&gt;Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &amp;gt;x) $, X is a continuous random variable.&lt;/p&gt;
-&lt;p&gt;The pth quantile is found by solving &lt;span class=&#34;math inline&#34;&gt;\(S(x_p)=1-p\)&lt;/span&gt;. For example, the median lifetime is the 50th percentile &lt;span class=&#34;math inline&#34;&gt;\(x_{0.5}\)&lt;/span&gt;, the 75 percentile lifetime is the 70th percentile &lt;span class=&#34;math inline&#34;&gt;\(x_{0.75}\)&lt;/span&gt;. These are obtained by solving the following: &lt;span class=&#34;math inline&#34;&gt;\(S(x_{0.5})=1-0.5=0.5\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(S(x_{0.75})=1-0.75=0.25\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;In Kaplan Meier estimate, we find the smallest time &lt;span class=&#34;math inline&#34;&gt;\(x_p\)&lt;/span&gt; for which the product limit estimator is less than or equal to 1-p. That is &lt;span class=&#34;math display&#34;&gt;\[ \hat{X_p}= inf [ t: \hat{S} (t) \le 1-p ] \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The LIFETEST procedure in SAS provides the survival time estimate in the table below:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;proc lifetest data=pbc outsurv=km_sur2 
-plots=survival( cl test atrisk (maxlen=13) nocensor) maxtime=4000 notable ;
-time futime*status(0,1);
-strata drug; 
-run;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost2.png&#34; width=&#34;400px&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;The missing 75th percentile survival time is because the maximum survival probability that could be determined is 0.34 in this study data (see the below figure).&lt;/p&gt;
-&lt;p&gt;In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times. If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of &lt;span class=&#34;math inline&#34;&gt;\(S(t)\)&lt;/span&gt; beyond this point, the Kaplan Meier survival estimate is undetermined. These are the reasons that you may see the survival output data had missing estimators in those non-event times. &lt;img src=&#34;/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost1.png&#34; alt=&#34;test image&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Using R Blogdown for Site Building</title>
       <link>/post/blog-down/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
@@ -361,6 +336,15 @@ run;&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Mon, 01 Aug 2016 00:00:00 -0400</pubDate>
       
       <guid>/publication/yang-ph-mitral-stenosis-/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predicting Long-Term Nursing Home Transfer from MI CHOICE Waiver Program</title>
+      <link>/publication/wu-nursing-home/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/wu-nursing-home/</guid>
       <description></description>
     </item>
     
