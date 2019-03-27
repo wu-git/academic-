@@ -13,6 +13,28 @@
     
     
     <item>
+      <title>Median Survival Time</title>
+      <link>/post/median-survival-time/</link>
+      <pubDate>Tue, 26 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/median-survival-time/</guid>
+      <description>One parameter of interest in survival analysis is the median residual at time x.
+Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &amp;gt;x) $, X is a continuous random variable.
+The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lifetime is the 50th percentile \(x_{0.5}\), the 75 percentile lifetime is the 70th percentile \(x_{0.</description>
+    </item>
+    
+    <item>
+      <title>Median survival time</title>
+      <link>/post/survival.median.time/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/survival.median.time/</guid>
+      <description>One parameter of interest in survival analysis is the median residual at time x.
+Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &amp;gt;x) $, X is a continuous random variable.
+The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lifetime is the 50th percentile \(x_{0.5}\), the 75 percentile lifetime is the 70th percentile \(x_{0.</description>
+    </item>
+    
+    <item>
       <title>Using R Blogdown for Site Building</title>
       <link>/post/blog-down/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>

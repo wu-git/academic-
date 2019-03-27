@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -17,10 +15,12 @@
   
     
   
-  <meta name="description" content="Biostatistician">
+  <meta name="description" content="One parameter of interest in survival analysis is the median residual at time x.
+Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &gt;x) $, X is a continuous random variable.
+The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lifetime is the 50th percentile \(x_{0.5}\), the 75 percentile lifetime is the 70th percentile \(x_{0.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tags/sas/">
+  <link rel="alternate" hreflang="en-us" href="/post/median-survival-time/">
 
   
 
@@ -80,36 +80,40 @@
   
 
   
-  <link rel="alternate" href="/tags/sas/index.xml" type="application/rss+xml" title="Ting Wu">
-  <link rel="feed" href="/tags/sas/index.xml" type="application/rss+xml" title="Ting Wu">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Ting Wu">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Ting Wu">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tags/sas/">
+  <link rel="canonical" href="/post/median-survival-time/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Ting Wu">
-  <meta property="og:url" content="/tags/sas/">
-  <meta property="og:title" content="SAS | Ting Wu">
-  <meta property="og:description" content="Biostatistician">
+  <meta property="og:url" content="/post/median-survival-time/">
+  <meta property="og:title" content="Median Survival Time | Ting Wu">
+  <meta property="og:description" content="One parameter of interest in survival analysis is the median residual at time x.
+Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &gt;x) $, X is a continuous random variable.
+The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lifetime is the 50th percentile \(x_{0.5}\), the 75 percentile lifetime is the 70th percentile \(x_{0.">
   
   
     
   <meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-03-26T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-03-26T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-03-26T00:00:00&#43;00:00">
   
 
   
 
   
 
-  <title>SAS | Ting Wu</title>
+  <title>Median Survival Time | Ting Wu</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -222,7 +226,9 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
+  
 
 
 
@@ -239,61 +245,271 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Median Survival Time</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">SAS</h1>
+
+<div class="article-metadata">
 
   
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Xiaoting (Ting) Wu">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-03-26 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-03-26 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Mar 26, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Xiaoting (Ting) Wu">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/sas/">SAS</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Median%20Survival%20Time&amp;url=%2fpost%2fmedian-survival-time%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fmedian-survival-time%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fmedian-survival-time%2f&amp;title=Median%20Survival%20Time"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fmedian-survival-time%2f&amp;title=Median%20Survival%20Time"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Median%20Survival%20Time&amp;body=%2fpost%2fmedian-survival-time%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-  <div>
-    <h2><a href="/post/median-survival-time/">Median Survival Time</a></h2>
-    <div class="article-style">
+    <div class="article-style" itemprop="articleBody">
       
-      One parameter of interest in survival analysis is the median residual at time x.
-Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &gt;x) $, X is a continuous random variable.
-The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lifetime is the 50th percentile \(x_{0.5}\), the 75 percentile lifetime is the 70th percentile \(x_{0.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/survival.median.time/">Median survival time</a></h2>
-    <div class="article-style">
-      
-      One parameter of interest in survival analysis is the median residual at time x.
-Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &gt;x) $, X is a continuous random variable.
-The pth quantile is found by solving \(S(x_p)=1-p\). For example, the median lifetime is the 50th percentile \(x_{0.5}\), the 75 percentile lifetime is the 70th percentile \(x_{0.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/talk/sas-prediction/">Using SAS to Validate Clinical Prediction Models (MWSUG 2018 - Paper HS-39)</a></h2>
-    <div class="article-style">
-      
-      Xiaoting Wu, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; Chang He, The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative; Donald S. Likosky, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative for the PERForm Registry and the Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative&quot;
-Conference: MWSUG 2018, Indianapolis, US (“https://www.mwsug.org”)
-ABSTRACT Model validation is an important step in establishing a clinical prediction model.
-      
-    </div>
-  </div>
-  
 
-  
 
+<p>One parameter of interest in survival analysis is the median residual at time x.</p>
+<p>Recall the definition of survival function, the probability of a subject experiencing the events beyond time x , defined as $S(x)=Pr (X &gt;x) $, X is a continuous random variable.</p>
+<p>The pth quantile is found by solving <span class="math inline">\(S(x_p)=1-p\)</span>. For example, the median lifetime is the 50th percentile <span class="math inline">\(x_{0.5}\)</span>, the 75 percentile lifetime is the 70th percentile <span class="math inline">\(x_{0.75}\)</span>. These are obtained by solving the following: <span class="math inline">\(S(x_{0.5})=1-0.5=0.5\)</span>, <span class="math inline">\(S(x_{0.75})=1-0.75=0.25\)</span>.</p>
+<p>In Kaplan Meier estimate, we find the smallest time <span class="math inline">\(x_p\)</span> for which the product limit estimator is less than or equal to 1-p. That is <span class="math display">\[ \hat{X_p}= inf [ t: \hat{S} (t) \le 1-p ] \]</span></p>
+<p>The LIFETEST procedure in SAS provides the survival time estimate in the table below:</p>
+<pre class="r"><code>proc lifetest data=pbc outsurv=km_sur2 
+plots=survival( cl test atrisk (maxlen=13) nocensor) maxtime=4000 notable ;
+time futime*status(0,1);
+strata drug; 
+run;</code></pre>
+<p><img src="/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost2.png" width="400px" /></p>
+<p>The missing 75th percentile survival time is because the maximum survival probability that could be determined is 0.34 in this study data (see the below figure).</p>
+<p>In Kaplan Meier method, the estimator is appropriate only when the largest observation corresponds to a event. A Kaplan-Meier estimator is well defined for all event time points less than the largest observation time, and is NOT defined in other times. If the largest study time is a event , the survival curve is zero beyond this point. If the largest time point is censored the value of <span class="math inline">\(S(t)\)</span> beyond this point, the Kaplan Meier survival estimate is undetermined. These are the reasons that you may see the survival output data had missing estimators in those non-event times. <img src="/Users/Wuxiaoting/Desktop/academic/academic-/content/images/imagepost/survivalpost1.png" alt="test image" /></p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/survival/">Survival</a>
+  
+  <a class="badge badge-light" href="/tags/sas/">SAS</a>
+  
 </div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Xiaoting (Ting) Wu</a></h5>
+    <h6 class="card-subtitle">Biostatistician</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:xiaotinw@med.umich.edu" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/" >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=1K6LeAwAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/wu-git" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/post/survival.median.time/">Median survival time</a></li>
+        
+        <li><a href="/talk/sas-prediction/">Using SAS to Validate Clinical Prediction Models (MWSUG 2018 - Paper HS-39)</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <div class="container">
   <footer class="site-footer">
   
@@ -444,6 +660,4 @@ ABSTRACT Model validation is an important step in establishing a clinical predic
 
   </body>
 </html>
-
-
 
