@@ -60,54 +60,6 @@ run;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Using R Blogdown for Site Building</title>
-      <link>/post/blogdown2/blog-down/</link>
-      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/blogdown2/blog-down/</guid>
-      <description>
-
-
-&lt;p&gt;It’s such a learning experience in setting up a website using github+ terminal + R blogdown + netlify for me. In general, I followed the post from [Alison Hill] (&lt;a href=&#34;https://alison.rbind.io/post/up-and-running-with-blogdown/&#34; class=&#34;uri&#34;&gt;https://alison.rbind.io/post/up-and-running-with-blogdown/&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;A couple of problems have occured and I have searched very hard to resolve them.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;R crash whenever I tried to open projects in Mac OS system.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Solution: download update R version from (&lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/download/&lt;/a&gt;). Now I have Rstudio 1.1.463 - Mac OS X in my mac.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;I don’t know how to push the local materials to github.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Solution: It seems there are several ways to push local files to github. In R I follow the path &lt;code&gt;Tools &amp;gt; Version Control &amp;gt; git&lt;/code&gt;. Then I select the folders that I would like to upload to github. However, some of the folders were NOT staged. In another word, I could not select these Not staged files in order to commit and push them to github.&lt;/p&gt;
-&lt;p&gt;To go around this, I used terminal. In terminal, I used &lt;code&gt;cd&lt;/code&gt; to go to the local github clone file. Then I used command &lt;code&gt;git add -A&lt;/code&gt; . All files in the folders were able to upload to github then.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;I could not publish my sites in netlify.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;After uploading all neccessary needed files into github, especially the ‘public’ folder, I followed the deploy setting but failed. The key step here turn out to be that you need to make sure that the hugo versions are consistent in your machine and netlify.&lt;/p&gt;
-&lt;p&gt;In terminal, I typed in `&lt;code&gt;Hugo versoins&lt;/code&gt; to obtain the hugo versions 0.51 in my machine. In netlify, I added the variables in the deploy setting, Hugo_version, and set the value of 0.51.&lt;/p&gt;
-&lt;p&gt;*4. Create a new post option 1: use addins &amp;lt; NewPost&amp;gt; which will create a newpost under the folder Content/Post option 2: create a Post folder under Content/Post&lt;/p&gt;
-&lt;p&gt;*5. Insert an image in RMD file and show it in blogdown&lt;/p&gt;
-&lt;p&gt;option 1: use addins &lt;Insert image&gt; during the edits of .md file This will generate a code in the file for example&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;![](/post/2019-03-27-median-survival-time_files/survivalpost1.png)  &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The file directory is under static/ with the relative directory path&lt;/p&gt;
-&lt;p&gt;option 2: put the file in the corresponding post file under static/ , and enter the file relative file path. For example, here is another code to add in a image which will allow image size adjustment&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::include_graphics(&amp;quot;/post/2019-03-27-median-survival-time_files/survivalpost2.png&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;use git shell language to push changes&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;git add -A git commit -m ‘initial commit’ git push origin master&lt;/p&gt;
-&lt;p&gt;git push origin master -f&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using R Blogdown for Site Building</title>
       <link>/post/blogdown2/blog-down2/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -412,6 +364,15 @@ run;&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Wed, 01 Mar 2017 00:00:00 -0500</pubDate>
       
       <guid>/publication/likosky-rbc-transfusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A preoperative risk model for postoperative pneumonia after coronary artery bypass grafting</title>
+      <link>/publication/likosky-pneumonia-risk-model/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/likosky-pneumonia-risk-model/</guid>
       <description></description>
     </item>
     
