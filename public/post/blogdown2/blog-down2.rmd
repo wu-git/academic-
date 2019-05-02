@@ -51,11 +51,11 @@ knitr::include_graphics("/post/2019-03-27-median-survival-time_files/survivalpos
 
 
 * 6. use git shell language to push changes 
+Reference: [link]
+(https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
 
-reference: [link]("https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line" )
-
+For example: 
 git add -A; 
-git commit -m 'initial commit' ; 
 git push origin master; 
 git push origin master  -f  ; 
 
