@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/talk/sasgf2019/</loc>
+      <lastmod>2019-04-30T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/2019-03-27-median-survival-time/median-survival-time/</loc>
       <lastmod>2019-03-27T00:00:00+00:00</lastmod>
     </url>
@@ -20,7 +28,15 @@
     
     <url>
     
-      <loc>/post/blogdown/blog-down/</loc>
+      <loc>/post/blogdown2/blog-down/</loc>
+      <lastmod>2018-11-08T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/blogdown2/blog-down2/</loc>
       <lastmod>2018-11-08T00:00:00+00:00</lastmod>
     </url>
     
@@ -94,6 +110,14 @@
     
       <loc>/publication/yang-sixteen-year-david-bentall/</loc>
       <lastmod>2018-03-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/qcore2017/</loc>
+      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -224,8 +248,26 @@
     
     <url>
     
+      <loc>/tags/method/</loc>
+      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/method/</loc>
+      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/prediction-model/</loc>
-      <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+      <lastmod>2019-04-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -270,7 +312,7 @@
     <url>
     
       <loc>/tags/sas/</loc>
-      <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+      <lastmod>2019-04-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -279,7 +321,7 @@
     <url>
     
       <loc>/categories/sas/</loc>
-      <lastmod>2019-03-27T00:00:00+00:00</lastmod>
+      <lastmod>2019-04-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -296,6 +338,15 @@
     <url>
     
       <loc>/slides/example-slides/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/statistics/</loc>
+      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -321,7 +372,7 @@
     <url>
     
       <loc>/talk/</loc>
-      <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+      <lastmod>2019-04-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

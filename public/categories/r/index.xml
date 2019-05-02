@@ -14,10 +14,21 @@
     
     <item>
       <title>Using R Blogdown for Site Building</title>
-      <link>/post/blogdown/blog-down/</link>
+      <link>/post/blogdown2/blog-down/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/blogdown/blog-down/</guid>
+      <guid>/post/blogdown2/blog-down/</guid>
+      <description>It’s such a learning experience in setting up a website using github+ terminal + R blogdown + netlify for me. In general, I followed the post from [Alison Hill] (https://alison.rbind.io/post/up-and-running-with-blogdown/).
+A couple of problems have occured and I have searched very hard to resolve them.
+ R crash whenever I tried to open projects in Mac OS system.   Solution: download update R version from (https://www.rstudio.com/products/rstudio/download/). Now I have Rstudio 1.</description>
+    </item>
+    
+    <item>
+      <title>Using R Blogdown for Site Building</title>
+      <link>/post/blogdown2/blog-down2/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blogdown2/blog-down2/</guid>
       <description>It’s such a learning experience in setting up a website using github+ terminal + R blogdown + netlify for me. In general, I followed the post from [Alison Hill] (https://alison.rbind.io/post/up-and-running-with-blogdown/).
 A couple of problems have occured and I have searched very hard to resolve them.
  R crash whenever I tried to open projects in Mac OS system.   Solution: download update R version from (https://www.rstudio.com/products/rstudio/download/). Now I have Rstudio 1.</description>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Xiaoting Wu</copyright>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using SAS to Validate  Prediction Models</title>
+      <link>/talk/sasgf2019/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/sasgf2019/</guid>
+      <description>Conference: SAS Global Forum 2019, Dallas, US
+Slides: See the handout</description>
+    </item>
     
     <item>
       <title>Using SAS to Validate Clinical Prediction Models (MWSUG 2018 - Paper HS-39)</title>
@@ -21,6 +31,16 @@
       <description>Xiaoting Wu, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; Chang He, The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative; Donald S. Likosky, Department of Cardiac Surgery, Michigan Medicine, Ann Arbor, MI; The Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative for the PERForm Registry and the Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative&amp;quot;
 Conference: MWSUG 2018, Indianapolis, US (“https://www.mwsug.org”)
 ABSTRACT Model validation is an important step in establishing a clinical prediction model.</description>
+    </item>
+    
+    <item>
+      <title>A comparison of methods for identifying hospital performance outliers in cardiac surgery</title>
+      <link>/talk/qcore2017/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/qcore2017/</guid>
+      <description>Short title: Identifying hospital performance outliers Xiaoting Wu, Ph.D.1; Min Zhang, Ph.D.2; Richard L. Prager, M.D.1,3; Donald S. Likosky, Ph.D.1,3; for the Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative (1) Department of Cardiac Surgery, University of Michigan, Ann Arbor, Michigan, (2) Department of Biostatistics, University of Michigan; (3) Michigan Society of Thoracic and Cardiovascular Surgeons Quality Collaborative
+Presented at the QCOR 2017 Scientific Sessions, Quality of Care and Outcomes Research, Arlington, VA, April 2 – 3, 2017</description>
     </item>
     
   </channel>
