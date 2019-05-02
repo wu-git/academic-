@@ -101,7 +101,7 @@ run;&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;use git shell language to push changes Reference: [link] (&lt;a href=&#34;https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line&#34; class=&#34;uri&#34;&gt;https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line&lt;/a&gt;)&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For example: git add -A; git push origin master; git push origin master -f ;&lt;/p&gt;
+&lt;p&gt;I did three lines of commands git add . git commit -m “change” git push -u origin master&lt;/p&gt;
 </description>
     </item>
     

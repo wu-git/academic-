@@ -54,8 +54,8 @@ knitr::include_graphics("/post/2019-03-27-median-survival-time_files/survivalpos
 Reference: [link]
 (https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
 
-For example: 
-git add -A; 
-git push origin master; 
-git push origin master  -f  ; 
+I did three lines of commands
+git add . 
+git commit -m "change"
+git push -u origin master
 
