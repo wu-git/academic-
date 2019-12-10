@@ -1,10 +1,12 @@
 ---
 title: "Survival Tips for Survival Analysis"
 author: "Ting Wu"
-date: '2019-9-30' 
+date: '2019-09-30' 
 categories: ["SAS"]
 tags: [ "SAS", "Survival"]
 ---
+
+This is a hand-on workshop material that covers the most common used survival analysis technique in SAS. 
 
 Conference: MidWest SAS user group 2019, Chicago, Illinois, US 
 

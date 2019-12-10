@@ -11,6 +11,35 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Time-To-Event Analysis in the Presence of Competing risks</title>
+      <link>/talk/mwsug_survival_compete2019/</link>
+      <pubDate>Mon, 30 Sep 2019 16:45:00 +0000</pubDate>
+      
+      <guid>/talk/mwsug_survival_compete2019/</guid>
+      <description>
+
+
+&lt;p&gt;Conference: MidWest SAS user group 2019, Chicago, Illinois, US&lt;/p&gt;
+&lt;p&gt;Slides: See the &lt;a href=&#34;/pdf/mwsug2019/survival/competing%20risk%20slides%20wu92719.pdf&#34;&gt;handout&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Survival Tips for Survival Analysis</title>
+      <link>/talk/mwsug_survival2019/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/mwsug_survival2019/</guid>
+      <description>
+
+
+&lt;p&gt;This is a hand-on workshop material that covers the most common used survival analysis technique in SAS.&lt;/p&gt;
+&lt;p&gt;Conference: MidWest SAS user group 2019, Chicago, Illinois, US&lt;/p&gt;
+&lt;p&gt;Slides: See the &lt;a href=&#34;/pdf/mwsug2019/survival/survival%20slides%20xiaotingwu92719_.pdf&#34;&gt;handout&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Using SAS to Validate  Prediction Models</title>
       <link>/talk/sasgf2019/</link>
       <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
@@ -356,24 +385,6 @@ run;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Conclusions: The surveyed approaches varied in their ability to identify performance outliers. Given its higher sensitivity to outlier hospitals and more stable estimates of hospital effects, indirect standardization methods with random effect models may best support quality improvement activities.&lt;/p&gt;
 &lt;p&gt;Slides: See the &lt;a href=&#34;/pdf/qcore2017/AHA%20QCOR_17slides.pdf&#34;&gt;handout&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Prediction of transfusions after isolated coronary artery bypass grafting surgical procedures</title>
-      <link>/publication/likosky-rbc-transfusion/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 -0500</pubDate>
-      
-      <guid>/publication/likosky-rbc-transfusion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A preoperative risk model for postoperative pneumonia after coronary artery bypass grafting</title>
-      <link>/publication/likosky-pneumonia-risk-model/</link>
-      <pubDate>Sat, 01 Oct 2016 00:00:00 -0400</pubDate>
-      
-      <guid>/publication/likosky-pneumonia-risk-model/</guid>
-      <description></description>
     </item>
     
   </channel>
