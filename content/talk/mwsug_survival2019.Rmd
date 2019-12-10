@@ -1,0 +1,12 @@
+---
+title: "Survival Tips for Survival Analysis"
+author: "Ting Wu"
+date: '2019-9-30' 
+categories: ["SAS"]
+tags: [ "SAS", "Survival"]
+---
+
+Conference: MidWest SAS user group 2019, Chicago, Illinois, US 
+
+Slides: See the [handout](/pdf/mwsug2019/survival/survival slides xiaotingwu92719_.pdf )
+
