@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Xiaoting Wu</copyright>
-    <lastBuildDate>Wed, 27 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2019 16:45:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/survival/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Time-To-Event Analysis in the Presence of Competing risks</title>
+      <link>/talk/mwsug_survival_compete2019/</link>
+      <pubDate>Mon, 30 Sep 2019 16:45:00 +0000</pubDate>
+      
+      <guid>/talk/mwsug_survival_compete2019/</guid>
+      <description>Conference: MidWest SAS user group 2019, Chicago, Illinois, US
+Slides: See the handout</description>
+    </item>
+    
+    <item>
+      <title>Survival Tips for Survival Analysis</title>
+      <link>/talk/mwsug_survival2019/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/mwsug_survival2019/</guid>
+      <description>This is a hand-on workshop material that covers the most common used survival analysis technique in SAS.
+Conference: MidWest SAS user group 2019, Chicago, Illinois, US
+Slides: See the handout</description>
+    </item>
     
     <item>
       <title>Median Survival Time</title>
